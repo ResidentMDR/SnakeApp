@@ -1,0 +1,20 @@
+﻿<Window x:Class="SnakeApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SnakeApp2"
+        mc:Ignorable="d"
+        Title="SnakeApp2 " Height="680" Width="620" ResizeMode="NoResize"
+        KeyDown="MoveSnake"
+        Loaded="Window_Loaded">
+
+    <StackPanel Background="BlanchedAlmond">
+        <TextBlock x:Name="ScoreText" Height="40" HorizontalAlignment="center" FontSize="40" FontFamily="Roboto" Background="CornflowerBlue" Foreground="Purple"/>
+        <Border BorderThickness="20" BorderBrush="Black">
+            <Grid x:Name="GameArea" Background="BlanchedAlmond" Height="auto" Width="auto" Focusable="True">
+            </Grid>
+        </Border>
+    </StackPanel>
+
+</Window>
